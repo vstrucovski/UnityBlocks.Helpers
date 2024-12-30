@@ -1,18 +1,16 @@
-﻿using NaughtyAttributes;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace UnityBlocks.Helpers
 {
     public class ChildArranger : MonoBehaviour
     {
-        [OnValueChanged("ArrangeChildren")] public float horizontalSpacing = 4.3f;
-        [OnValueChanged("ArrangeChildren")] public float verticalSpacing = 4f;
-        [OnValueChanged("ArrangeChildren")] public int numberOfColumns = 1;
-        [OnValueChanged("ArrangeChildren")] public Vector3 rotateAxis = Vector3.right;
-        [OnValueChanged("ArrangeChildren")] public float rotatePower = 25;
+        [SerializeField] private float horizontalSpacing = 4.3f;
+        [SerializeField] private float verticalSpacing = 4f;
+        [SerializeField] private int numberOfColumns = 1;
+        public Vector3 rotateAxis = Vector3.right;
+        public float rotatePower = 25;
 
-        [Button]
-        [ContextMenu("ArrangeChildren")]
+        [ContextMenu("Arrange Children")]
         // ReSharper disable once UnusedMember.Local
         public void ArrangeChildren()
         {
@@ -32,7 +30,7 @@ namespace UnityBlocks.Helpers
             }
         }
 
-        [Button]
+        [ContextMenu("Rotation Noise")]
         public void RotationNoise()
         {
             for (var i = 0; i < transform.childCount; i++)

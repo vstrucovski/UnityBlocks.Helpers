@@ -1,14 +1,12 @@
-﻿using NaughtyAttributes;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace UnityBlocks.Helpers
 {
     public class FpsChanger : MonoBehaviour
     {
-        [SerializeField, ReadOnly, ResizableTextArea]
+        [SerializeField]
         // ReSharper disable once NotAccessedField.Local
-        private string about = "F1-F5 change fps\n" +
-                               "F6 add 100 coins";
+        private string about = "F1-F5 change fps@";
 
         private static void SetFPS(int value)
         {

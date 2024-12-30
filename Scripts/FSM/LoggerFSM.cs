@@ -1,5 +1,4 @@
 ﻿using System;
-using NaughtyAttributes;
 using UnityEngine;
 
 namespace UnityBlocks.Helpers.FSM
@@ -21,7 +20,7 @@ namespace UnityBlocks.Helpers.FSM
             output = $"{time}:{obj.GetType().Name}\n{output}";
         }
 
-        [Button]
+        [ContextMenu("Clear")]
         private void Clear()
         {
             output = "";
