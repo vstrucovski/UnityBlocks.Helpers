@@ -6,16 +6,13 @@ namespace UnityBlocks.Helpers
     {
         public Camera mainCamera;
 
-        private void Start()
+        private void LateUpdate()
         {
             if (mainCamera == null)
             {
                 mainCamera = Camera.main;
             }
-        }
 
-        private void LateUpdate()
-        {
             transform.LookAt(transform.position + mainCamera.transform.rotation * Vector3.forward,
                 mainCamera.transform.rotation * Vector3.up);
         }
