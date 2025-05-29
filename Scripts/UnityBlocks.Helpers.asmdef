@@ -1,9 +1,7 @@
 {
     "name": "UnityBlocks.Helpers",
     "rootNamespace": "",
-    "references": [
-        "GUID:ec8b40a638238f144a0f143806224dcc"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

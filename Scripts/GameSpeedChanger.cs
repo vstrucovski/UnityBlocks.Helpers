@@ -2,11 +2,11 @@
 
 namespace UnityBlocks.Helpers
 {
-    public class FpsChanger : MonoBehaviour
+    public class GameSpeedChanger : MonoBehaviour
     {
         [SerializeField]
         // ReSharper disable once NotAccessedField.Local
-        private string about = "F1-F5 change fps@";
+        private string about = "F1-F6 change game speed@";
 
         private static void SetFPS(int value)
         {
@@ -40,6 +40,11 @@ namespace UnityBlocks.Helpers
             if (Input.GetKeyDown(KeyCode.F5))
             {
                 SetFPS(60);
+            }
+
+            if (Input.GetKeyDown(KeyCode.F6))
+            {
+                SetFPS(120);
             }
         }
     }
