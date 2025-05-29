@@ -6,7 +6,7 @@ using UnityEngine;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace UnityBlocks.Helpers.Data.RandomizedList
+namespace UnityBlocks.Helpers.Data.ProbabilityGroups
 {
     public abstract class RandomContentGroupConfig<T> : ScriptableObject where T : Object
     {

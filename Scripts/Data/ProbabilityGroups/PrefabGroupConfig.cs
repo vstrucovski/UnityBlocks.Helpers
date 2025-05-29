@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityBlocks.Helpers.Data.RandomizedList
+namespace UnityBlocks.Helpers.Data.ProbabilityGroups
 {
     [CreateAssetMenu(menuName = "Unity Blocks/Data/Random Prefabs Group")]
     public class PrefabGroupConfig : RandomContentGroupConfig<GameObject>

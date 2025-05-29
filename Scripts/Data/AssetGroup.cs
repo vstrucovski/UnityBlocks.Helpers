@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UnityBlocks.Helpers.Data
 {
-    public class ScriptableObjectGroup<T> : ScriptableObject where T : ScriptableObject
+    public class AssetGroup<T> : ScriptableObject where T : ScriptableObject
     {
         [SerializeField] private List<T> list;
 

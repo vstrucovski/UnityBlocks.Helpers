@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UnityBlocks.Helpers.Data.RandomizedList
+namespace UnityBlocks.Helpers.Data.ProbabilityGroups
 {
     [Serializable]
     public class WeightedListItem<T> where T : UnityEngine.Object
